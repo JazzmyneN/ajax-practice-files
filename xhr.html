@@ -1,0 +1,121 @@
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title> Http Requests & JavaScript</title>
+        <script src="xhr.js" defer></script>
+        <style>
+            @font-face {
+                font-family: 'pokemon';
+                src: url(RBYGSC.ttf);
+            }
+            *{
+                font-family: 'pokemon';
+            }
+            img#pokedex_screen{
+                position: absolute;
+                top: 23.5rem;
+                left: 15rem;
+                border: none;
+            }
+            input#info_id{
+                position: absolute;
+                top: 24.8rem;
+                left: 23.5rem;
+                background-color: transparent;
+                color: black;
+                border: none;
+            }
+            body{
+                background-image:url(pokedex.png);
+                background-position-x: 0rem;
+                background-position-y: 0rem;
+                background-repeat: no-repeat;
+            }
+            textarea{
+                resize:none;
+            }
+            input#info_type{
+                position: absolute;
+                top:26.5rem;
+                left:27rem;
+                background-color: transparent;
+                width: 3.6rem;
+                height: 1rem;
+                border: none;
+            }
+            input#info_stats{
+                position: absolute;
+                top:26.5rem;
+                left:30.7rem;
+                background-color: transparent;
+                width: 4.3rem;
+                height: 1rem;
+                border: none;
+                font-size: .8rem;
+            }
+            input#info_height{
+                position: absolute;
+                top:28.5rem;
+                left:29.5rem;
+                background-color: transparent;
+                width: 3.6rem;
+                height: 1rem;
+                border: none;
+            }
+            input#info_weight{
+                position: absolute;
+                top:29.6rem;
+                left:29.5rem;
+                background-color: transparent;
+                width: 3.6rem;
+                height: 1rem;
+                border: none;
+            }
+            textarea#info_moves{
+                position: absolute;
+                top: 31.3rem;
+                left: 16.2rem;
+                border: none;
+                font-size:.8rem
+                
+            }
+            #search{
+                position: absolute;
+                top:45rem;
+                border: none;
+            }
+        </style>
+       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    </head>
+    <body>
+        
+        <img src="" id="pokedex_screen" width='115' height="115">
+        
+        <input type="text" readonly id="info_type" name="info_type" value="Type:">
+
+
+        <input type="text" readonly id="info_id">
+        <input type="text" readonly id="info_height">
+        <input type="text" readonly id="info_weight">
+
+        <input type="text" readonly id="info_stats"></input>
+        
+        <textarea readonly id="info_moves" cols="20" rows="3"></textarea>
+       
+        <select id="info_moves" name="info_moves">
+            <option id='option'>None</option>
+        </select>    
+        
+
+        <div id="search">
+            <input type="text" placeholder="Pokemon Name" id="pName">
+            <button id="get-btn">Get Data</button>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+        
+    </body>
+</html>
